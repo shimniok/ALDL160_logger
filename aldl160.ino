@@ -58,7 +58,7 @@ void doSample() {
 
   // Sync to the sync character
   // GM 160 ALDL sends a sync character starting with
-  // a "1" start bit (all other bytes have "0" start bit)
+  // a "1" bit (all other bytes start with a "0" bit)
   // followed by 0xff.
   if (myByte == 0x1ff) {
     digitalWrite(HiPin, HIGH);
